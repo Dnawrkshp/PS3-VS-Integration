@@ -80,9 +80,32 @@ namespace PSL1GHTBuilder
                         string error = "";
                         string[] colonWords = str.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
 
-                        error = colonWords[0].ToUpper() + ":" + colonWords[1].Replace("/", "\\") + "(" + colonWords[2] + ") : ";
-                        error += "At index " + colonWords[3] + " " + String.Join(":", colonWords, 4, colonWords.Length - 4).Trim();
-
+                        if (colonWords[0].Length == 1) //Full path
+                        {
+                            if (colonWords[2].IndexOf("error") < 0)
+                            {
+                                error = colonWords[0].ToUpper() + ":" + colonWords[1].Replace("/", "\\") + "(" + colonWords[2] + ") : ";
+                                error += "At index " + colonWords[3] + " " + String.Join(":", colonWords, 4, colonWords.Length - 4).Trim();
+                            }
+                            else
+                            {
+                                error = colonWords[0].ToUpper() + ":" + colonWords[1].Replace("/", "\\") + "(" + colonWords[2] + ") : ";
+                                error += String.Join(":", colonWords, 3, colonWords.Length - 3).Trim();
+                            }
+                        }
+                        else
+                        {
+                            if (colonWords[2].IndexOf("error") < 0)
+                            {
+                                error = colonWords[0].Replace("/", "\\") + "(" + colonWords[1] + ") : ";
+                                error += "At index " + colonWords[2] + " " + String.Join(":", colonWords, 3, colonWords.Length - 3).Trim();
+                            }
+                            else
+                            {
+                                error = colonWords[0].Replace("/", "\\") + "(" + colonWords[1] + ") : ";
+                                error += String.Join(":", colonWords, 2, colonWords.Length - 2).Trim();
+                            }
+                        }
                         Console.Error.WriteLine(error);
                     }
                     else if (words.Length > 1 && words[1].ToLower().IndexOf("warning") == 0)
@@ -91,9 +114,32 @@ namespace PSL1GHTBuilder
                         string error = "";
                         string[] colonWords = str.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
 
-                        error = colonWords[0].ToUpper() + ":" + colonWords[1].Replace("/", "\\") + "(" + colonWords[2] + "," + colonWords[3] +  ") : ";
-                        error += String.Join(":", colonWords, 4, colonWords.Length - 4).Trim();
-
+                        if (colonWords[0].Length == 1) //Full path
+                        {
+                            if (colonWords[3].IndexOf("warning") < 0)
+                            {
+                                error = colonWords[0].ToUpper() + ":" + colonWords[1].Replace("/", "\\") + "(" + colonWords[2] + "," + colonWords[3] + ") : ";
+                                error += String.Join(":", colonWords, 4, colonWords.Length - 4).Trim();
+                            }
+                            else
+                            {
+                                error = colonWords[0].ToUpper() + ":" + colonWords[1].Replace("/", "\\") + "(" + colonWords[2] + ") : ";
+                                error += String.Join(":", colonWords, 3, colonWords.Length - 3).Trim();
+                            }
+                        }
+                        else
+                        {
+                            if (colonWords[2].IndexOf("warning") < 0)
+                            {
+                                error = colonWords[0].Replace("/", "\\") + "(" + colonWords[1] + "," + colonWords[2] + ") : ";
+                                error += String.Join(":", colonWords, 3, colonWords.Length - 3).Trim();
+                            }
+                            else
+                            {
+                                error = colonWords[0].Replace("/", "\\") + "(" + colonWords[1] + ",1) : ";
+                                error += String.Join(":", colonWords, 2, colonWords.Length - 2).Trim();
+                            }
+                        }
                         Console.Error.WriteLine(error);
                     }
 

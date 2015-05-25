@@ -12,5 +12,12 @@ c:\users\dan\documents\PSL1GHT\ArtemisPS3-GUI\ArtemisPS3-GUI\PSL1GHTBuilder.exe
 c:\users\dan\documents\PSL1GHT\ArtemisPS3-GUI\ArtemisPS3-GUI\PSL1GHTBuilder.pdb
 C:\Users\Dan\Documents\Visual Studio 2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\obj\Debug\PSL1GHTBuilder.exe
 C:\Users\Dan\Documents\Visual Studio 2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\obj\Debug\PSL1GHTBuilder.pdb
+C:\Users\Dan\Documents\VisualStudio2013\Projects\ArtemisPS3\ArtemisPS3-PRX\PSL1GHTBuilder.exe.config
+C:\Users\Dan\Documents\VisualStudio2013\Projects\ArtemisPS3\ArtemisPS3-PRX\PSL1GHTBuilder.exe
+C:\Users\Dan\Documents\VisualStudio2013\Projects\ArtemisPS3\ArtemisPS3-PRX\PSL1GHTBuilder.pdb
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\bin\Debug\PSL1GHTBuilder.exe.config
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\bin\Debug\PSL1GHTBuilder.exe
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\bin\Debug\PSL1GHTBuilder.pdb
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\obj\Debug\PSL1GHTBuilder.csprojResolveAssemblyReference.cache
 C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\obj\Debug\PSL1GHTBuilder.exe
 C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTBuilder\obj\Debug\PSL1GHTBuilder.pdb
