@@ -1,0 +1,16 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="VSIXProject1..301c6ee4-b3ee-4dc2-b482-9403539e4ccc" Version="1.0" Language="en-US" Publisher="Dnawrkshp" />
+    <DisplayName>PSL1GHTProject</DisplayName>
+    <Description xml:space="preserve">PSL1GHT Hello World Project Template for VS2013</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+  </Assets>
+</PackageManifest>

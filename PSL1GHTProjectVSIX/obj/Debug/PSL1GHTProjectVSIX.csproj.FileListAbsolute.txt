@@ -1,0 +1,7 @@
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTProjectVSIX\bin\Debug\ProjectTemplates\PSL1GHTProject.zip
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTProjectVSIX\bin\Debug\PSL1GHTProjectVSIX.vsix
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTProjectVSIX\bin\Debug\extension.vsixmanifest
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTProjectVSIX\obj\Debug\PSL1GHTProjectVSIX.csprojResolveAssemblyReference.cache
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTProjectVSIX\obj\Debug\PSL1GHTProjectVSIX.dll
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTProjectVSIX\obj\Debug\PSL1GHTProjectVSIX.pdb
+C:\Users\Dan\Documents\VisualStudio2013\Projects\PS3_VS_Integration\PSL1GHTProjectVSIX\obj\Debug\extension.vsixmanifest

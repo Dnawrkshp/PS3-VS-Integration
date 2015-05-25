@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="sfo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="pkgfiles\ICON0.PNG" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F64F48C-ED37-4EFE-A24D-057C84183AAE}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <ProjectName>PSL1GHTProject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) build</NMakeBuildCommandLine>
+    <NMakeOutput>
+    </NMakeOutput>
+    <NMakeCleanCommandLine>"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) clean
+"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) build</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>
+    </NMakePreprocessorDefinitions>
+    <IncludePath>$(PSL1GHTSDKPath)\psl1ght\spu\include;$(PSL1GHTSDKPath)\MinGW\include;$(PSL1GHTSDKPath)\psl1ght\ppu\include;$(ProjectDir)\libfont\include;$(ProjectDir)\include;$(ProjectDir)\obj;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(PSL1GHTSDKPath)\psl1ght\spu\lib;$(PSL1GHTSDKPath)\psl1ght\ppu\lib;$(PSL1GHTSDKPath)\MinGW\lib;$(LibraryPath)</LibraryPath>
+    <NMakeIncludeSearchPath>$(PSL1GHTSDKPath)\MinGW\;$(PSL1GHTSDKPath)\MinGW\include;$(PSL1GHTSDKPath)\psl1ght\ppu\include;$(ProjectDir)\include;$(ProjectDir)\obj;$(PSL1GHTSDKPath)\ps3dev\portlibs\ppu\include</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) package</NMakeBuildCommandLine>
+    <NMakeOutput>
+    </NMakeOutput>
+    <NMakeCleanCommandLine>"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) clean
+"$(ProjectDir)\PSL1GHTBuilder.exe" $(PSL1GHTSDKPath) package</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>
+    </NMakePreprocessorDefinitions>
+    <IncludePath>$(PSL1GHTSDKPath)\psl1ght\spu\include;$(PSL1GHTSDKPath)\MinGW\include;$(PSL1GHTSDKPath)\psl1ght\ppu\include;$(ProjectDir)\libfont\include;$(ProjectDir)\include;$(ProjectDir)\obj;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(PSL1GHTSDKPath)\psl1ght\spu\lib;$(PSL1GHTSDKPath)\psl1ght\ppu\lib;$(PSL1GHTSDKPath)\MinGW\lib;$(LibraryPath)</LibraryPath>
+    <NMakeIncludeSearchPath>$(PSL1GHTSDKPath)\MinGW\;$(PSL1GHTSDKPath)\MinGW\include;$(PSL1GHTSDKPath)\psl1ght\ppu\include;$(ProjectDir)\include;$(ProjectDir)\libfont\include;$(ProjectDir)\obj;$(PSL1GHTSDKPath)\ps3dev\portlibs\ppu\include</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path />
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,2 @@
+C:\Users\Dan\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Dnawrkshp\PSL1GHTProject\1.0\\extension.vsixmanifest
+C:\Users\Dan\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Dnawrkshp\PSL1GHTProject\1.0\ProjectTemplates\\PSL1GHTProject.zip
